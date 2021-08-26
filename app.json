@@ -1,4 +1,9 @@
 {
   "name": "RN065",
-  "displayName": "RN065"
+  "displayName": "RN065",
+  "expo": {
+    "ios": {
+      "bundleIdentifier": "org.reactjs.native.example.RN065"
+    }
+  }
 }

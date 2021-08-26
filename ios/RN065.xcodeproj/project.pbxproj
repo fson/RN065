@@ -14,6 +14,7 @@
 		72A5803B35D30628D417F08A /* libPods-RN065-RN065Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCEC8FF292ED18CFCC20146 /* libPods-RN065-RN065Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		CB3A9E76A67D4303311AD3E2 /* libPods-RN065.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7B833252D24C270434787E /* libPods-RN065.a */; };
+		FD6A32F426CEABB6007069BF /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6A32F326CEABB6007069BF /* Dummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		BFD443DF697F052723584324 /* Pods-RN065-RN065Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN065-RN065Tests.debug.xcconfig"; path = "Target Support Files/Pods-RN065-RN065Tests/Pods-RN065-RN065Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C01F08379E942D27B895B340 /* Pods-RN065-RN065Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN065-RN065Tests.release.xcconfig"; path = "Target Support Files/Pods-RN065-RN065Tests/Pods-RN065-RN065Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FD6A32F226CEABB6007069BF /* RN065-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RN065-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD6A32F326CEABB6007069BF /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				FD6A32F326CEABB6007069BF /* Dummy.swift */,
+				FD6A32F226CEABB6007069BF /* RN065-Bridging-Header.h */,
 			);
 			name = RN065;
 			sourceTree = "<group>";
@@ -104,7 +109,6 @@
 				BFD443DF697F052723584324 /* Pods-RN065-RN065Tests.debug.xcconfig */,
 				C01F08379E942D27B895B340 /* Pods-RN065-RN065Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +212,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -412,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				FD6A32F426CEABB6007069BF /* Dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFD443DF697F052723584324 /* Pods-RN065-RN065Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C01F08379E942D27B895B340 /* Pods-RN065-RN065Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RN065Tests/Info.plist;
@@ -498,6 +505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RN065;
+				SWIFT_OBJC_BRIDGING_HEADER = "RN065-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RN065;
+				SWIFT_OBJC_BRIDGING_HEADER = "RN065-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

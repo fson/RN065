@@ -11,28 +11,28 @@ PODS:
     - expo-dev-launcher/Main (= 0.6.7)
     - expo-dev-menu-interface
     - EXUpdatesInterface
-    - React
+    - React-Core
   - expo-dev-launcher/Main (0.6.7):
     - expo-dev-launcher/Unsafe
     - expo-dev-menu-interface
     - EXUpdatesInterface
-    - React
+    - React-Core
   - expo-dev-launcher/Unsafe (0.6.7):
     - expo-dev-menu-interface
     - EXUpdatesInterface
-    - React
+    - React-Core
   - expo-dev-menu (0.7.7):
     - expo-dev-menu-interface
     - expo-dev-menu/Main (= 0.7.7)
-    - React
+    - React-Core
   - expo-dev-menu-interface (0.3.4)
   - expo-dev-menu/Main (0.7.7):
     - expo-dev-menu-interface
     - expo-dev-menu/Vendored
-    - React
+    - React-Core
   - expo-dev-menu/Vendored (0.7.7):
     - expo-dev-menu-interface
-    - React
+    - React-Core
   - EXUpdatesInterface (0.2.2)
   - FBLazyVector (0.65.0)
   - FBReactNativeSpec (0.65.0):
@@ -517,11 +517,11 @@ SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
-  expo-dev-client: 6deebc5a4525c8b39ffc090448ccd21e6b008e35
-  expo-dev-launcher: 08aa4331ca13f4a4698ef9c346c092942332cc25
-  expo-dev-menu: 751bb170ea1024c1ea8fa2c0c1f952360a68e48f
+  expo-dev-client: 2a3e3d54253b37e7ae8d35aa7c7328b1b0f734a2
+  expo-dev-launcher: 6ae81f30b06470413eeca0f9e2a115429f10c1c3
+  expo-dev-menu: 148071b2ca564529a0efb941cc2a72fe7397195a
   expo-dev-menu-interface: 145d352ba9edff66b0c1fb13773f0f0dd9d50afd
-  EXUpdatesInterface: b68e78b912a03fff7901a5f46ec200c45e3506a5
+  EXUpdatesInterface: 31a0826d3036c570f8d09a38504865332915269f
   FBLazyVector: 55f5afbbb8f5021a000c3d9289820d17cbc541b3
   FBReactNativeSpec: c2d85d69490fc5666bc4123dff3b9b72db06a987
   Flipper: b1fddf9a17c32097b2b4c806ad158b2f36bb2692

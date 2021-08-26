@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "expo-dev-client": "^0.4.7",
+    "expo-dev-client": "file:../expo/packages/expo-dev-client",
     "react": "17.0.2",
     "react-native": "0.65.0"
   },
@@ -20,6 +20,7 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
     "eslint": "7.14.0",
+    "expo": "^42.0.3",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.0",
     "react-native-codegen": "^0.0.7",
@@ -27,5 +28,12 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "expo-dev-menu": "file:../expo/packages/expo-dev-menu",
+    "expo-dev-menu-interface": "file:../expo/packages/expo-dev-menu-interface",
+    "expo-dev-launcher": "file:../expo/packages/expo-dev-launcher",
+    "expo-updates-interface": "file:../expo/packages/expo-updates-interface",
+    "expo-updates": "file:../expo/packages/expo-updates"
   }
 }
